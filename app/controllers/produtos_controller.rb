@@ -20,4 +20,7 @@ class ProdutosController < ApplicationController
         @nome_a_buscar = params[:nome]
         @produtos = Produto.where "nome like ?", "%#{@nome_a_buscar}%"
     end
+
+    ## def teste
+
 end
